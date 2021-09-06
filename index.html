@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+    <script type='text/javascript' src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+       
+<body page='lista'>
+    
+    
+    <div id='listaRegistros'>
+
+       
+
+        <div style='display: flex;'>
+           <pre>Itens   </pre> <input class="inputP" placeholder="PESQUISAR"  id='inputPesquisa' > 
+        </div> <br>
+
+       
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Fone</th>
+                    <th>Ações</th>
+                    
+                </tr>
+            </thead>
+            <tbody id='listaRegistrosBody'></tbody>
+        </table>
+        
+        <div >
+            <button onclick="vizualizar('cadastro', true) " id ="botao1">Novo Item</button>
+        </div>
+
+        
+
+    </div>
+
+    <form id='cadastroRegistro'>
+
+        <div class='label'>
+            <div>ID</div>
+            <div>
+                <input type='number' readonly id='id' />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Nome/Razão Social</div>
+            <div>
+                <input id='nome' />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>CNPJ/CPF:</div>
+            <div>
+                <input type="text" id='nome' />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Data de nascimento:</div>
+            <div>
+                <input type="date" id="data"/>
+            </div>
+        </div>
+
+
+
+        <div class='label'>
+            <div>Endereço</div>
+            <div>
+                <input type="text" id="endereco" />
+            </div>
+        </div>
+
+        
+        <div class='label'>
+            <div>Bairro</div>
+            <div>
+                <input type="text" id="bairro" />
+            </div>
+        </div>
+
+        
+        <div class='label'>
+            <div>CEP</div>
+            <div>
+                <input type="number" id="cep" />
+            </div>
+        </div>
+
+        
+        <div class='label'>
+            <div>Data de cadastro</div>
+            <div>
+                <input />
+            </div>
+        </div>
+
+        
+        <div class='label'>
+            <div>Município</div>
+            <div>
+                <input type="text" id="municipio" />
+            </div>
+        </div>
+
+        
+        <div class='label'>
+            <div>Telefone</div>
+            <div>
+                <input type="tel" id="fone" />
+            </div>
+        </div>
+
+        
+        <div class='label'>
+            <div>Celular</div>
+            <div>
+                <input type="tel" id="celular" />
+            </div>
+        </div>
+
+        
+        <div class='label'>
+            <div>UF</div>
+            <div>
+                <input type="text" id="uf" />
+            </div>
+        </div>
+
+        
+        <div class='label'>
+            <div>Inscrição Estadual</div>
+            <div>
+                <input type="number" id="iestadual" />
+            </div>
+        </div>
+
+        <div>
+            <button>Salvar</button>
+            <button onclick="vizualizar('lista')" class="cinza" type='button'>Cancelar</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
